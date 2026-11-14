@@ -1,0 +1,42 @@
+flowchart TD
+    A[Input modelling dataset] --> B[Pre-flight checks]
+    B --> C{Analysis stream}
+
+    C --> D1[DK68 ROI structural<br/>5 morphometric measures]
+    C --> D2[Cognition]
+    C --> D3[Grouped structural builder]
+
+    D3 --> E1[WholeBrain cortical aggregate]
+    D3 --> E2[6 Lobes]
+    D3 --> E3[Left / Right Hemisphere]
+    D3 --> E4[Yeo7 if validated overlap map exists]
+
+    D1 --> F[BrainNormR shared core]
+    D2 --> F
+    E1 --> F
+    E2 --> F
+    E3 --> F
+    E4 --> F
+
+    F --> G[Age = primary normative predictor<br/>Sex / eTIV / Education as appropriate]
+    G --> H[GAMLSS staged search<br/>12 families × 44 mu forms × 6 sigma forms<br/>max 648 GAMLSS fits]
+    H --> I[Comparators<br/>5 GAM + 47 FP/POLY]
+    I --> J[5-fold nested selection and cross-fitting<br/>CV-NLL primary]
+    J --> K[1000 conditional bootstrap refits<br/>Age × Sex sensitivity]
+    K --> L[Core outputs<br/>centiles, Conditional SD, derivative,<br/>milestones, cross-fitted normative scores,<br/>diagnostics, calibration, stability]
+
+    L --> M1[03 Expanded biomarker module<br/>CF_Norm_Z first<br/>deviation burden]
+    L --> M2[04 Master outputs<br/>results + curves + participant outputs]
+
+    M2 --> N1[07 One-region 5-measure plot]
+    M2 --> N2[08 Batch 5-measure plots]
+    M2 --> N3[09 Publication figure suite<br/>M1-M6 + S1-S16]
+
+    M1 --> O[10 Final pipeline audit]
+    M2 --> O
+    N3 --> O
+
+    O --> P{Final status}
+    P -->|PASS| Q[Pipeline complete / frozen]
+    P -->|WARNING| R[Review QC / optional missing item]
+    P -->|FAIL| S[Complete missing mandatory output]

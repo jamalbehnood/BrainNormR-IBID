@@ -1,0 +1,4 @@
+ROI,Network,Weight
+# Example only; replace with real surface/vertex overlap weights.,,
+# lh_precuneus,Default,0.72
+# lh_precuneus,DorsalAttention,0.28

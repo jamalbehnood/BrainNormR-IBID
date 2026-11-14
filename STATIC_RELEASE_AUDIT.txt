@@ -1,0 +1,61 @@
+BrainNormR v5.6.0 — STATIC RELEASE AUDIT
+========================================================================
+Static audit only. Run the included R smoke test in the target R environment.
+
+[PASS] Required file: BrainNormR_v5_FINAL_PUBLIC.R
+[PASS] Required file: BrainNormR_v5_FINAL_PUBLIC_ALL_ONLY.R
+[PASS] Required file: BrainNormR_v5_FINAL_PUBLIC_THREE_GROUP.R
+[PASS] Required file: 03_biomarker_module.R
+[PASS] Required file: 09_make_publication_figure_suite.R
+[PASS] Required file: 10_final_pipeline_audit.R
+[PASS] Required file: 15_run_normative_deviation_profiles.R
+[PASS] Required file: Config/BrainNormR_mode_config.R
+[PASS] Required file: Config/Deviation_profile_config.R
+[PASS] Required file: docs/DEVIATION_PROFILE_ANALYSIS.md
+[PASS] Required file: tests/test_deviation_profile_helpers.R
+[PASS] Required file: README.md
+[PASS] Required file: RUN_INSTRUCTIONS.md
+[PASS] Required file: VERSION
+[PASS] Release version is v5.6.0 — v5.6.0 — Dual Mode + Reproducible Parallel + Deviation Profiles
+[PASS] Deviation-profile implementation: Balanced_LevelMeasure_Burden
+[PASS] Deviation-profile implementation: run_independent_outcome_null
+[PASS] Deviation-profile implementation: run_block_preserving_null
+[PASS] Deviation-profile implementation: run_profile_stability
+[PASS] Deviation-profile implementation: Threshold_TopDecile
+[PASS] Deviation-profile implementation: Demographic_Audit
+[PASS] Deviation-profile implementation: Directional_Audit
+[PASS] Primary biomarker burden excludes cognition
+[PASS] Cognition-inclusive burden is retained as sensitivity
+[PASS] R delimiter scan: 00_build_grouped_structural_dataset.R — balanced delimiters
+[PASS] R delimiter scan: 00_check_project.R — balanced delimiters
+[PASS] R delimiter scan: 00_install_packages.R — balanced delimiters
+[PASS] R delimiter scan: 01_run_structural_atlas.R — balanced delimiters
+[PASS] R delimiter scan: 02_run_cognitive_normative.R — balanced delimiters
+[PASS] R delimiter scan: 03_biomarker_module.R — balanced delimiters
+[PASS] R delimiter scan: 04_make_thesis_outputs.R — balanced delimiters
+[PASS] R delimiter scan: 05_run_single_outcome.R — balanced delimiters
+[PASS] R delimiter scan: 06_run_grouped_structural_models.R — balanced delimiters
+[PASS] R delimiter scan: 07_1_plot_5measures_Grouped_3PANEL_WORDTABLE_AGEBAND_CLEAR.R — balanced delimiters
+[PASS] R delimiter scan: 07_plot_5measures_one_region.R — balanced delimiters
+[PASS] R delimiter scan: 08_plot_5measures_batch.R — balanced delimiters
+[PASS] R delimiter scan: 09_make_publication_figure_suite.R — balanced delimiters
+[PASS] R delimiter scan: 10_final_pipeline_audit.R — balanced delimiters
+[PASS] R delimiter scan: 11_export_model_equations.R — balanced delimiters
+[PASS] R delimiter scan: 12_make_thesis_article_descriptive_tables_figures.R — balanced delimiters
+[PASS] R delimiter scan: 13_run_age_period_analysis.R — balanced delimiters
+[PASS] R delimiter scan: 14_run_brain_cognition_normative_associations.R — balanced delimiters
+[PASS] R delimiter scan: 15_run_normative_deviation_profiles.R — balanced delimiters
+[PASS] R delimiter scan: BrainNormR_v5_FINAL_PUBLIC.R — balanced delimiters
+[PASS] R delimiter scan: BrainNormR_v5_FINAL_PUBLIC_ALL_ONLY.R — balanced delimiters
+[PASS] R delimiter scan: BrainNormR_v5_FINAL_PUBLIC_THREE_GROUP.R — balanced delimiters
+[PASS] R delimiter scan: Config/BrainNormR_mode_config.R — balanced delimiters
+[PASS] R delimiter scan: Config/Deviation_profile_config.R — balanced delimiters
+[PASS] R delimiter scan: tests/test_deviation_profile_helpers.R — balanced delimiters
+[PASS] Public source and documentation are English-only
+[PASS] No user-specific absolute paths in public files
+[PASS] No participant-level input data included
+[PASS] No generated analysis results included
+[PASS] No transient history, cache or temporary files
+
+Checks run: 54
+Checks failed: 0
